@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <title>Jo's Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  </head>
+  <body>
+  <div class ="container">
+    <header>
+      <section>
+        <h1>JavaScript Coding Quiz</h1>
+      </section>
+      <section>
+    
+       <div id="timer">
+        Time: <span id="countdown">120</span>
+      </div>
+      </section>
+    </header>
+    <main id="home">
+      <button id="startBtn">start</button>
+    </main>
+    <main id="quiz" class= "d-none">
+        <section class="welcome">
+        </section>
+        <section id="questions">
+        </section>
+        <section class="buttons">
+          <button class="answer" id="btn0"><span id="choice0"></span></button>
+          <button class="answer" id="btn1"><span id="choice1"></span></button>
+          <button class="answer" id="btn2"><span id="choice2"></span></button>
+          <button class="answer" id="btn3"><span id="choice3"></span></button>
+        </section>
+        <section>
+        <button type="button" class="submitBtn">High Scores</button>
+        </section>
+        <section class="answer">
+        </section>
+        <section id="progress">
+        </section>
+        <section class="gameOver">
+        </section>
+        <section class="leaderboard">
+        </section>
+        
+      </main>
+    </div>
+    
+  <script src="./assets/script.js"></script>
+  </body>
+</html>
