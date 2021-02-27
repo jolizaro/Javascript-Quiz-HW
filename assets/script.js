@@ -27,24 +27,24 @@ var questions = [
         correctAnswer: "HyperText Markup Language"
     },
     {
-        text: "What is HTML?", 
-        answers: ["HyperText Markup Language","Happy Time Money Love", "opt3", "opt4"],
-        correctAnswer: "HyperText Markup Language"
+        text: "Which language is used for styling web pages?", 
+        answers: ["HTML","JQuery", "CSS", "XML"],
+        correctAnswer: "CSS"
     },
     {
-        text: "What is HTML?", 
-        answers: ["HyperText Markup Language","Happy Time Money Love", "opt3", "opt4"],
-        correctAnswer: "HyperText Markup Language"
+        text: "Which is not a JavaScript framework?", 
+        answers: ["Python Script","JQuery", "DJango", "NodeJS"],
+        correctAnswer: "DJango"
     },
     {
-        text: "What is HTML?", 
-        answers: ["HyperText Markup Language","Happy Time Money Love", "opt3", "opt4"],
-        correctAnswer: "HyperText Markup Language"
+        text: "Which is used for Connect To Database?", 
+        answers: ["PHP","HTML", "JS", "All"],
+        correctAnswer: "PHP"
     },
     {
-        text: "What is HTML?", 
-        answers: ["HyperText Markup Language","Happy Time Money Love", "opt3", "opt4"],
-        correctAnswer: "HyperText Markup Language"
+        text: "Webdevtrick.com is about ...", 
+        answers: ["Web Design","Graphic Design", "SEO & Development", "All"],
+        correctAnswer: "All"
     }       
 ]
 
@@ -98,10 +98,12 @@ function makeQuestions() {
     // }
 }
 
-function checkAnswer(event) {
-    var isCorrect = event.target.innerText == questions[questionNumber].correctAnswer
-    console.log(isCorrect)
-    
+// function checkAnswer(event) {
+//     var isCorrect = event.target.innerText == questions[questionNumber].correctAnswer
+//     console.log(isCorrect)
+    function checkAnswer() {
+        
+    }
 }
 
 // display option to enter name to scoreboard
