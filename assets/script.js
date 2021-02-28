@@ -87,7 +87,7 @@ function makeQuestions() {
         gameOver()
         return
     }
-
+}
 
 
     questionHead.textContent = questions[questionNumber].text;
@@ -150,7 +150,7 @@ submitBtn.addEventListener("click", function (event) {
     var quizScore = JSON.parse(localStorage.getItem("quizScore"))
     document.getElementById("highscore").textContent = quizScore.name + " : " + quizScore.score
 });
-}
+
 
 function addScore() {
     userNameInput = document.getElementById("initials").value
