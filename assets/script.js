@@ -1,5 +1,6 @@
 var startBtn = document.getElementById("startBtn");
 var submitBtn = document.querySelector(".submitBtn")
+var highScoreBtn = document.querySelector(".highScoreBtn")
 var secondsLeft = 120;
 var timerElement = document.getElementById("countdown");
 var submitScoreElement = document.querySelector("#submit-score");
@@ -95,18 +96,6 @@ function makeQuestions() {
     optionThree.textContent = questions[questionNumber].answers[2]
     optionFour.textContent = questions[questionNumber].answers[3]
 
-
-    // answerChoices.innerHTML = "";
-
-    // var choices = questions[questionNumber].choices;
-
-    // for (var q = 0; q < choices.length; q++) {
-    //     var nextChoice = document.createElement("button");
-
-    //     nextChoice.textContent = choices[q]
-    //     answerBtn = answerChoices.appendChild(nextChoice).setAttribute("class", "p-3 m-1 btn btn-light btn-block");
-    // }
-}
 function gameOver() {
     questionHead.className = "hide"
     document.querySelector("#question").className = "hide"
@@ -154,13 +143,14 @@ answerBtn1.addEventListener("click", checkAnswer)
 answerBtn2.addEventListener("click", checkAnswer)
 answerBtn3.addEventListener("click", checkAnswer)
 submitBtn.addEventListener("click", function (event) {
-    event.stopPropagation();
+    event.preventDefault();
     addScore();
     gameOverSection.classList.add("hide")
     leaderBoard.classList.remove("hide")
     var quizScore = JSON.parse(localStorage.getItem("quizScore"))
     document.getElementById("highscore").textContent = quizScore.name + " : " + quizScore.score
 });
+}
 
 function addScore() {
     userNameInput = document.getElementById("initials").value
@@ -182,4 +172,3 @@ function addScore() {
     }
     localStorage.setItem("quizScore", JSON.stringify(newScore));
 }
-
