@@ -48,9 +48,9 @@ var questions = [
         correctAnswer: "PHP"
     },
     {
-        text: "Webdevtrick.com is about ...",
-        answers: ["Web Design", "Graphic Design", "SEO & Development", "All"],
-        correctAnswer: "All"
+        text: "Which event occurs when the user clicks on an HTML element?",
+        answers: ["Web Design", "Graphic Design", "OnClick", "All"],
+        correctAnswer: "OnClick"
     }
 ]
 
