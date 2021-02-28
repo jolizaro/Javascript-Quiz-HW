@@ -87,15 +87,13 @@ function makeQuestions() {
         gameOver()
         return
     }
-}
-
-
     questionHead.textContent = questions[questionNumber].text;
     optionOne.textContent = questions[questionNumber].answers[0]
     optionTwo.textContent = questions[questionNumber].answers[1]
     optionThree.textContent = questions[questionNumber].answers[2]
     optionFour.textContent = questions[questionNumber].answers[3]
-
+}
+   
 function gameOver() {
     questionHead.className = "hide"
     document.querySelector("#question").className = "hide"
