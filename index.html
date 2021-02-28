@@ -32,7 +32,7 @@
     <main id="quiz" class= "d-none">
         <section class="welcome">
         </section>
-        <section id="questions">
+        <section id="question">
         </section>
         <section class="buttons">
           <button class="answer" id="btn0"><span id="choice0"></span></button>
@@ -43,13 +43,21 @@
         <section>
         <button type="button" class="submitBtn">High Scores</button>
         </section>
-        <section class="answer">
-        </section>
+        
         <section id="progress">
         </section>
-        <section class="gameOver">
+        <section class="gameOver hide">
+          All Done! 
+          <div id="finalscore"></div>
+          Enter your initials: <input id="initials" type="text">
+          <button class="submitBtn">Submit</button>
         </section>
-        <section class="leaderboard">
+        <section class="leaderboard hide">
+          High Score: 
+          <div id="highscore">
+            
+          </div>
+          
         </section>
         
       </main>

@@ -53,3 +53,6 @@ h1 {
     color: #2B2B2B;
     font-size: 18px;
 }
+.hide {
+  display: none;
+}
